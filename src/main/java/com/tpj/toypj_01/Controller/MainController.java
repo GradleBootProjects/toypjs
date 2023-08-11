@@ -10,4 +10,10 @@ public class MainController {
     public String home(){
         return "/home";
     }
+
+    @GetMapping("/baseball")
+    public String basehome(){
+
+        return "/html/basehome.html";
+    }
 }
