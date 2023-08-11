@@ -1,0 +1,17 @@
+body{
+    background-color: lightgray;
+}
+p {
+    color: black;
+}
+
+/* credit section */
+
+
+
+
+/* display size */
+@media ( max-width: 720px ) {
+
+}
+
