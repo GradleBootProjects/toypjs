@@ -2,6 +2,7 @@ package com.tpj.toypj_01.dao;
 
 import com.fasterxml.jackson.annotation.JacksonInject;
 import com.tpj.toypj_01.vo.MemberVO;
+import lombok.Getter;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -14,8 +15,10 @@ public class MemberDAOImpl implements MemberDAO {
 
     private static final String Namespace = "com.tpj.ToyPJ_01.memberMapper";
 
-    public void signMember(MemberVO member) throws Exception{
 
+
+    public void signMember(MemberVO member) throws Exception{
+        sqlSession.selectOne(Namespace+".signMember", member);
     }
 
 }
