@@ -5,13 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <script src="../js/test.js">
+        sign_test();
+    </script>
     <script src="../js/base.vue"></script>
     <title>Baseball Game</title>
 </head>
 <body>
 <P>Please Wait for Open</P>
 
-<input type="button" value="sign up">
+<form id = sign_form method="get">
+    <label>
+        <input type="text" id="name" placeholder="Name" style="border: 1px">
+        <input type="password" id="pw" placeholder="Password" style="border: 1px">
+        <input type="button" id="sign_btn" value="sign in">
+    </label>
+</form>
+
+
 
 
 </body>

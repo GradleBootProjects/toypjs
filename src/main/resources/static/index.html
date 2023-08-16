@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>TEST SERVER</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <script src="js/test.js">
+            sign_test();
+        </script>
+
+        <title>Baseball Game</title>
 </head>
 <body>
 <P>ONLY FOR STUDY</P>
-<p><a href="/baseball">Baseball Game</a></p>
+<P>Please Wait for Open</P>
+
+<form id=sign_form method="get">
+    <label>
+        <input type="text" id="name" placeholder="Name" style="border: 1px" maxlength="20">
+        <input type="password" id="pw" placeholder="Password" style="border: 1px" maxlength="4">
+        <input type="button" id="sign_btn" name=sign_btn class=sign_btn value="sign in">
+    </label>
+</form>
 </body>
 </html>
