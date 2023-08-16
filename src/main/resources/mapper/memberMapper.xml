@@ -6,11 +6,11 @@
 <mapper namespace="com.tpj.toypj_01.mapper.memberMapper">
 
     <insert id="signMember">
-        INSERT INTO user (name) values (#name)
+        INSERT INTO user (name, pw) values (#{name}, #{pw});
     </insert>
 
     <select id="showMember">
-        SELECT nickname FROM user;
+        SELECT name FROM user;
     </select>
 
 </mapper>
