@@ -6,9 +6,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/base.css">
-        <script src="js/test.js">
-            sign_test();
-        </script>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
+<!--    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+    <script src="js/test.js">
+        checkID();
+    </script>
 
         <title>Baseball Game</title>
 </head>
@@ -18,9 +24,9 @@
 
 <form id=sign_form method="get">
     <label>
-        <input type="text" id="name" placeholder="Name" style="border: 1px" maxlength="20">
-        <input type="password" id="pw" placeholder="Password" style="border: 1px" maxlength="4">
-        <input type="button" id="sign_btn" name=sign_btn class=sign_btn value="sign in">
+        <input type="text" id="name" name="name" placeholder="Name" style="border: 1px" maxlength="20">
+        <input type="password" id="pw" name="pw" placeholder="Password" style="border: 1px" maxlength="4">
+        <input type="button" id="sign_btn" name=sign_btn class=sign_btn value="sign in" onClick="sign_test();">
     </label>
 </form>
 </body>

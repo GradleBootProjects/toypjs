@@ -1,5 +1,6 @@
 package com.tpj.toypj_01.vo;
 
+import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,22 +20,6 @@ public class MemberVO {
         this.win = win;
         this.lose = lose;
         this.pw = pw;
-    }
-
-    public String getName(){
-        return name;
-    }
-
-    public int getWin(){
-        return win;
-    }
-
-    public int getLose(){
-        return lose;
-    }
-
-    public String getPw(){
-        return pw;
     }
 
     public void setName(String name){
