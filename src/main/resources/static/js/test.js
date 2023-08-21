@@ -1,11 +1,22 @@
+
+let checkID = function() {
+    const check = document.getElementById("sign_form");
+
+    return check.name.value.length < 20 && check.pw.value.length <= 4;
+};
+
 function sign_test(){
-    $(document).ready(function(){
-        $(".sign_btn").click(function(){
-            alert("Btn is OK");
-            // var id = document.getElementById("id");
-            // var pw = document.getElementById("pw");
-            $('#sign_form').attr("action", "sign");
-            $('#join_form').submit();
-        });
-    });
+    let res = checkID();
+    let OK = true;
+
+    if(res === OK){
+        alert("SUCCESS!!!");
+        $('#sign_form').attr("action", "sign");
+        $('#sign_form').submit();
+    }
+    else {
+        alert("[FAIL] Please Check Name or PW");
+    }
+
 }
+
